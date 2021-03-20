@@ -12,10 +12,10 @@ async function loginUser(credentials) {
         },
         body: JSON.stringify(credentials)
     })
-    .then(data =>data.json)
+    .then(data => data.json())
 }
 
-export default function Login({setToken}) {
+export default function Login({ setToken }) {
     const [username, setUserName] = useState();
     const [password, setPassword] = useState();
 
@@ -23,7 +23,7 @@ export default function Login({setToken}) {
         e.preventDefault();
         const token = await loginUser({
             username,
-            password
+            password,
         });
         setToken(token)
     }
