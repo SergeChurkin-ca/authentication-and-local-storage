@@ -7,17 +7,21 @@ import Preferences from './components/Preferences/Preferences';
 function App() {
   return (
     <div className="wrapper">
-      <h1>Application</h1>
-      <BrowserRouter>
-        <Switch>
-          <Route path="/dashboard">
-          <Dashboard />
-          </Route>
-          <Route path="/preferences">
-            <Preferences />
-          </Route>
-        </Switch>
-      </BrowserRouter>
+
+      <div className="application">
+        <h1>Application</h1>
+        <BrowserRouter>
+          <Switch>
+            <Route path="/dashboard">
+            <Dashboard />
+            </Route>
+            <Route path="/preferences">
+              <Preferences />
+            </Route>
+          </Switch>
+        </BrowserRouter>
+        
+      </div>
     </div>
   )
 }
