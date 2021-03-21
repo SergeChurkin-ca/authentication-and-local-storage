@@ -31,6 +31,7 @@ export default function Login({ setToken }) {
     return (
 
             <div className="login-wrapper">
+                        <button onClick={()  => {localStorage.clear('token')}}>logout</button>
                 <h1>Login please</h1>
                 <form onSubmit={handleSubmit}>
                     <label>

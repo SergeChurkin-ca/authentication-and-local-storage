@@ -5,7 +5,6 @@ import './App.css';
 
 import Navbar from './components/Navbar/Navbar'
 import Dashboard from './components/Dashboard/Dashboard';
-import Preferences from './components/Preferences/Preferences';
 import Login from './components/Login/Login';
 import useToken from './useToken';
 
@@ -19,12 +18,20 @@ function App() {
     return <Login setToken={setToken} />
   }
 
+  const Logout = () => {
+      sessionStorage.clear();
+      window.location.reload()
+      
+  }
+
   return (
+    
     <div className="wrapper">
-   <BrowserRouter>
+    <BrowserRouter>
         <Navbar />
       <div className="application">
         <h1>Application</h1>
+        <button onClick={Logout}>logout</button>
         <Switch>
             <Route path="/dashboard">
             <Dashboard />

@@ -5,8 +5,8 @@ import './Dashboard.css'
 
 
 class Dashboard extends Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       persons: [],
     };
@@ -27,9 +27,14 @@ class Dashboard extends Component {
     });
   }
 
-  render() {
-    return (
+  
 
+  render() {
+    
+ 
+
+    return (
+  
       <div className="employee-catalogue">
         {this.state.persons.map((personsObject) => {
           return (
