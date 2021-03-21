@@ -1,10 +1,13 @@
 @import url("setup.css");
+body {
+    background-color: papayawhip;
+}
+
 .wrapper {
     margin: 0 auto;
     display: inline-flex;
     width: 100vw;
     height: 100vh;
-    background-color: papayawhip;
     justify-content: center;
 }
 

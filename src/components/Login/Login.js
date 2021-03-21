@@ -30,7 +30,6 @@ export default function Login({ setToken }) {
 
     return (
 
-        <div className="wrapper">
             <div className="login-wrapper">
                 <h1>Login please</h1>
                 <form onSubmit={handleSubmit}>
@@ -47,7 +46,7 @@ export default function Login({ setToken }) {
                     </div>
                 </form>
             </div>
-        </div>
+        
     )
 }
 
