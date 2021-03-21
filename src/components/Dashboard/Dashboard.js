@@ -11,7 +11,6 @@ class Dashboard extends Component {
       persons: [],
     };
   }
-
   componentDidMount() {
     axios({
       url: "https://randomuser.me/api/?results=15",
@@ -27,14 +26,8 @@ class Dashboard extends Component {
     });
   }
 
-  
-
   render() {
-    
- 
-
     return (
-  
       <div className="employee-catalogue">
         {this.state.persons.map((personsObject) => {
           return (

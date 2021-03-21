@@ -3,7 +3,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
-import Navbar from './components/Navbar/Navbar'
+import Navbar from './components/Navbar/Navbar';
+import Home from './components/Home/Home';
 import Dashboard from './components/Dashboard/Dashboard';
 import Login from './components/Login/Login';
 import useToken from './useToken';
@@ -31,15 +32,16 @@ function App() {
         <Navbar />
       <div className="application">
         <h1>Application</h1>
-        <button onClick={Logout}>logout</button>
+        <button onClick={Logout}>Logout</button>
         <Switch>
-            <Route path="/dashboard">
-            <Dashboard />
-            </Route>
+            <Route exact path="/" component={Home} />
+            <Route exact path="/dashboard" component={Dashboard} />
+           
           </Switch>
       </div>
       </BrowserRouter>
     </div>
+   
   )
 }
 
