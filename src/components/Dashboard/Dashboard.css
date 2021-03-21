@@ -1,0 +1,18 @@
+.employee-catalogue {
+    /* display: inline-flex; */
+    width: 80vw;
+    /* flex-wrap: wrap; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    grid-gap: 1rem;
+    /* margin: 0 auto; */
+    /* border: solid 3px red; */
+}
+
+.person {
+    border: solid 2px grey;
+    padding: 1rem;
+    font-size: min(max(16px, 1vw), 12px);
+}

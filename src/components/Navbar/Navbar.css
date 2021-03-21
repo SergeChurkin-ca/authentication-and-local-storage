@@ -1,0 +1,18 @@
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+}
+
+.nav-links a:hover,
+.nav-links a:focus {
+    color: rgb(196, 87, 87);
+}
+
+.nav-links a:active {
+    color: rgb(139, 10, 36);
+}

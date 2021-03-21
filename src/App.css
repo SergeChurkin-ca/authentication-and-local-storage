@@ -5,19 +5,20 @@ body {
 
 .wrapper {
     margin: 0 auto;
-    display: inline-flex;
-    width: 100vw;
+    /* display: inline-flex; */
+    width: 90vw;
     height: 100vh;
     justify-content: center;
+    border: solid 3px green;
 }
 
 .application {
-    border: solid 2px grey;
+    display: flex;
     margin: 5rem auto;
     padding: 1rem 1rem;
     width: 50vw;
-    height: 40vh;
-    display: inline-flex;
+    /* height: auto; */
+    display: flex;
     flex-direction: column;
     align-items: center;
 }

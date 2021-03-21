@@ -1,14 +1,17 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 
+import Navbar from './components/Navbar/Navbar'
 import Dashboard from './components/Dashboard/Dashboard';
 import Preferences from './components/Preferences/Preferences';
 import Login from './components/Login/Login';
 import useToken from './useToken';
 
+
 function App() {
+
 
   const {token, setToken} = useToken();
 
@@ -18,20 +21,17 @@ function App() {
 
   return (
     <div className="wrapper">
+   <BrowserRouter>
+        <Navbar />
       <div className="application">
         <h1>Application</h1>
-        <BrowserRouter>
-          <Switch>
+        <Switch>
             <Route path="/dashboard">
             <Dashboard />
             </Route>
-            <Route path="/preferences">
-              <Preferences />
-            </Route>
           </Switch>
-        </BrowserRouter>
-        
       </div>
+      </BrowserRouter>
     </div>
   )
 }
