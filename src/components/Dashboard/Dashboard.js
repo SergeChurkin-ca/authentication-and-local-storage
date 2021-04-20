@@ -28,7 +28,9 @@ class Dashboard extends Component {
 
   render() {
     return (
-      <div className="employee-catalogue">
+      <div>
+        <h2>Employee list</h2>
+        <div className="employee-catalogue">
         {this.state.persons.map((personsObject) => {
           return (
             <div key={personsObject.id} className="person">
@@ -41,6 +43,7 @@ class Dashboard extends Component {
             </div>
           );
         })}
+      </div>
       </div>
 
     );

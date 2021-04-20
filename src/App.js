@@ -9,9 +9,7 @@ import Dashboard from './components/Dashboard/Dashboard';
 import Login from './components/Login/Login';
 import useToken from './useToken';
 
-
 function App() {
-
 
   const {token, setToken} = useToken();
 
@@ -30,16 +28,15 @@ function App() {
     <div className="wrapper">
     <BrowserRouter>
         <Navbar />
-      <div className="application">
-        <h1>Application</h1>
-        <button onClick={Logout}>Logout</button>
-        <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/dashboard" component={Dashboard} />
-           
-          </Switch>
-      </div>
-      </BrowserRouter>
+        <div className="application">
+          <h1>Application</h1>
+          <button onClick={Logout}>Logout</button>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/dashboard" component={Dashboard} />
+            </Switch>
+        </div>
+    </BrowserRouter>
     </div>
    
   )
