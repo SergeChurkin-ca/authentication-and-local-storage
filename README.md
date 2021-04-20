@@ -2,9 +2,9 @@
 
 Applications objectvies: testing local session storage and accessing user's API
 
-### first - 'node server.js' to start local server wich will run localhost:8080 for login and storing the user token
+#### first - 'node server.js' to start local server wich will run localhost:8080 for login and storing the user token
 
-### second - 'npm start' to start React
+#### second - 'npm start' to start React
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -19,3 +19,4 @@ Logout clears session storage
 ### random user api
 
 dashboard fetches random user api, to demonstrate work with axios.
+https://github.com/SergeChurkin-ca/authentication-and-local-storage.git
