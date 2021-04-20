@@ -19,4 +19,3 @@ Logout clears session storage
 ### random user api
 
 dashboard fetches random user api, to demonstrate work with axios.
-https://github.com/SergeChurkin-ca/authentication-and-local-storage.git
